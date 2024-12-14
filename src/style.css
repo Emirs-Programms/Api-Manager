@@ -1,0 +1,116 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+}
+
+.users {
+    background-color: #616161;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.users ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.users ul li {
+    margin: 10px 0;
+}
+
+.users ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease, font-size 0.3s ease; /* плавные изменения */
+}
+
+.users ul li a:hover {
+    color: #ffffffc5;
+    font-size: 30px; /* увеличиваем размер шрифта при наведении */
+    text-decoration: underline;
+padding: 0 50px;
+    border: 2px solid black;
+}
+
+.userdata {
+    background-color: #616161;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* плавное изменение цвета */
+}
+
+button:hover {
+    background-color: #007BFF; /* цвет при наведении */
+    color: white; /* цвет текста при наведении */
+}
+
+/* Загрузчик (спиннер) */
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 50px auto;
+}
+
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #007bff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
